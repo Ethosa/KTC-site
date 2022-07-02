@@ -22,6 +22,9 @@
 </template>
 
 <style>
+* {
+  color: #cfb7d4;
+}
 @keyframes move {
   0% {
     transform: translateY(-5px);
