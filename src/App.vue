@@ -1,5 +1,5 @@
 <template>
-  <main class="flex flex-row bg-slate-900">
+  <main class="flex flex-row" style="background: #14061d">
     <div class="flex">
       <div class="flex w-5/12 h-screen justify-center">
         <img src="./assets/light.png" class="h-5/6 self-center anim" />
