@@ -1,22 +1,42 @@
 <template>
-  <Home />
+  <main class="flex flex-row bg-slate-900">
+    <div class="flex">
+      <div class="flex w-5/12 h-screen justify-center">
+        <img src="./assets/light.png" class="h-5/6 self-center anim" />
+        <img
+          src="./assets/dark.png"
+          class="h-5/6 self-center mt-4 -ml-48 filter drop-shadow-3xl anim2"
+        />
+      </div>
+      <div
+        class="flex flex-col w-1/2 -mt-64 justify-center text-white font-sans"
+      >
+        <div class="flex w-full text-8xl p-8">KTC App</div>
+        <div class="flex text-justify text-5xl indent-16">
+          Официальное приложение для Канского технологического колледжа с
+          приятным интерфейсом
+        </div>
+      </div>
+    </div>
+  </main>
 </template>
 
-<script setup>
-import Home from './components/Home.vue'
-</script>
-
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+@keyframes move {
+  0% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
 
-  #app {
-    font-family: 'Montserrat', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #cfb7d4;
-  }
-  body {
-    background: #14061d;
-  }
+.anim {
+  animation: 2s move ease-in-out infinite alternate-reverse;
+}
+
+.anim2 {
+  animation: 2s move ease-in-out infinite alternate-reverse;
+  animation-delay: 0.2s;
+}
 </style>
