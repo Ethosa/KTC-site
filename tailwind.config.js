@@ -14,6 +14,12 @@ module.exports = {
       desktop: "1280px",
       // => @media (min-width: 1280px) { ... }
     },
+    colors: {
+      'nightpurple-100': '#8b8c9a',
+      'nightpurple-500': '#674f80',
+      'nightpurple-700': '#a57ca8',
+      'nightpurple-900': '#1b102d',
+    }
   },
   plugins: [],
 };
